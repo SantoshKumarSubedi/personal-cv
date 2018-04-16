@@ -13,14 +13,64 @@ justify-content: center;
   justify-content: center;
   margin-top: 20px;
 }
-.index-section{
+.index-section{/*index section*/
 margin-top: 100px;
 font-family: 'Lato', sans-serif;
   font-size: 200%;
-  text-align: center;
-  text-shadow: ;
+  width:93%;
+  margin-left: 7%;
+  display: flex;
+  flex-direction: row;
+}
+.section-mid{
+  display: flex;
+  flex-direction: column;
 }
 
+.section-left,.section-right{
+  width: 2%;
+  background: #e9e9e9;
+  animation-name: up_down;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.section-mid-top,.section-mid-buttom{
+  height: 10px;
+  background: #e9e9e9;
+  animation-name: left_right;
+  animation-duration: 2s;
+
+  animation-fill-mode: forwards;
+}
+@media screen and (min-width:720px){
+.index-section{
+  font-size: 300%;
+  margin-left: 30%;
+  width: 70%;
+}
+
+.section-left,.section-right{
+animation-name: up_down_mobile;
+width: 1%;
+
+}
+
+
+}
+@keyframes up_down_mobile {
+from{height: 0px}
+to{height: 230px}
+}
+@keyframes up_down {
+  from{ height: 0px}
+  to{ height: 162px}
+}
+
+@keyframes left_right {
+    from{width: 0%}
+    to{width: 100%}
+}
 .section-text{
   animation-name: mainsection;
   animation-fill-mode: forwards;
@@ -29,12 +79,7 @@ font-family: 'Lato', sans-serif;
   animation-duration: 3s;
 
 }
-@media screen and (min-width:720px){
-.index-section{
-  font-size: 300%;
-}
 
-}
 .github-image{
 
   transition: 1s;
@@ -59,46 +104,40 @@ font-family: 'Lato', sans-serif;
   justify-content: flex-start;
   margin-left: -8px;
   margin-right: -8px;
+  animation:solid_color 4s linear infinite alternate;
+
+
 }
 .social-email{
   text-align: center;
   font-family: 'Courgette', cursive;
   font-size: 25px;
-
+  color:#e9e9e9;
 }
-.social-icons{
-  margin-top: -30px;
-  display: flex;
-  justify-content: center;
 
+
+
+
+
+@keyframes solid_color {
+  from{background:#a32424}
+    to{background:#d44242}
 }
+
+
+
+
+
 @media screen and (min-width:720px) {
   .social{
   flex-direction: row;
   margin-top: 50px;
   }
-.social-icons{
-  margin-top: 0;
-  flex-direction: row-reverse;
 
-  align-items: center;
-  flex: 1;
-}
 .social-email{
   flex: 1;
 }
-.github-image{
-  margin: 15px;
-  border-style: solid;
-  border-color: #e9e9e9;
-  border-width: medium;
-  border-radius: 25%;
-  transition: 1s;
-}
-.github-image:hover{
-  transform: scale(2,3);
-  border-radius: 50%;
-}
+
 }
 /*************************************************************index section css end here************************************************/
 /**************************************************************css section start here***************************************************/
@@ -240,4 +279,17 @@ justify-content: center;
 }
 .cv-intro{
 font: black;
+
+}
+/*************************************************************css for cv page end here************************************************/
+/*************************************************************css for social media page start here************************************/
+.social-section{
+display: flex;
+justify-content: center;
+}
+.social-first-row{
+  display: flex;
+}
+.social-second-row{
+  display: flex;
 }
