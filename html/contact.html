@@ -30,27 +30,30 @@
   </header>
 <section class="section">
   <h1>Contact</h1>
-<form class="form">
+<form class="form" method="post" onsubmit="return validateform(this);">
   <div class="labelAndFields">
-<label class="name">Name:</label><input type="text" id="text-field" class="text-fields" placeholder="enter you name here"/>
-<label class="email">Email:</label><input type="text" id="text-field" class="text-fields" placeholder="enter you email here"/>
-<label class="subject">subject</label><input type="text" id="text-field" class="text-fields" placeholder="subject"/>
-<label class="message">Message:</label><input type="textarea" id="message_box" class="text-fields" placeholder="enter your message here"/>
+<label class="name">Name:</label><input type="text" name="fname" class="text-fields" placeholder="enter you name here" />
+<label class="email">Email:</label><input type="text" name="email" class="text-fields" placeholder="enter you email here"/>
+<label class="subject">subject</label><input type="text" name="subject" class="text-fields" placeholder="subject"/>
+<label class="message">Message:</label><input type="textarea" name="message" class="text-fields" placeholder="enter your message here"/>
+<div class="radio_class"><label class="type"> Type:</label><input type="radio" name="purpose" value="business" checked/>Business
+                                  <input type="radio" name="purpose" value="personal"/>personal
+                                </div>
 </div>
-<div class="button-div"><button type="reset"> Send</button></div>
+<div class="button-div"><button type="submit" value="Submit"> Send</button></div>
 </form>
 <div id="map">
 
 <script>
       function initMap() {
-        var uluru = {lat: 27.7484786, lng: 85.3284215};
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var my_co_ordinate = {lat: 27.7484786, lng: 85.3284215};
+        var mymap = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
-          center: uluru
+          center: my_co_ordinate
         });
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+          position: my_co_ordinate,
+          map: mymap
         });
       }
     </script>
@@ -62,13 +65,6 @@
 <div class="social">
   <div class="social-email">
     <p class="email">subedisantos9@gmail.com</p>
-  </div>
-  <div class="social-icons">
-    <a href="https://www.github.com/SantoshKumarSubedi">
-<img class="github-image" src="../images/GitHub.png"/></a>
-<a href="https://www.linkedin.com/in/santosh-subedi-535156160/i">
-<img class="github-image" src="../images/linkedin.png"/></a>
-
   </div>
 </div>
 <footer class="footer">

@@ -210,6 +210,14 @@ article{
 .labelAndFields{
   display: flex;
   flex-direction: column;
+  color:#e9e9e9;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.radio_class{
+  display: flex;
+  flex-direction: row;
 }
 .button-div{
   display: flex;
@@ -218,7 +226,7 @@ article{
 button{
 
   padding: 15px;
-  width: 15%;
+  width: 30%;
   background: #181717;
   color:white;
   transition: 1s;
@@ -239,6 +247,16 @@ button:hover{
 
 .section h1{
   color:  #e9e9e9;
+}
+@media screen and (min-width:720px) {
+.labelAndFields{
+  align-items: flex-start;
+}
+
+button{
+  width: 20%;
+}
+
 }
 /**************************************************************Contact page css end here**********************************************/
 /*************************************************************CV page start here*******************************************************/
