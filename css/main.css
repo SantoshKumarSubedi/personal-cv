@@ -299,6 +299,14 @@ justify-content: center;
 font: black;
 
 }
+@media screen and (min-width:720px) {
+  .cv-section{
+    flex-direction: row;
+  }
+  .cv-div-first{
+    width: 50%;
+  }
+}
 /*************************************************************css for cv page end here************************************************/
 /*************************************************************css for social media page start here************************************/
 .social-section{
