@@ -286,17 +286,32 @@ font: black;
 .social-section{
 display: flex;
 justify-content: center;
+margin-top: 100px;
 }
 .social-first-row{
   display: flex;
 }
-.social-first-row-first-element,.social-first-row-second-element,.social-second-row-first-element,.social-second-row-second-element{
+.social-element{
 background: white;
-height: 50px;
+height: auto;
 width: 100px;
 margin: 1%;
+border-radius: 15%;
 }
 
 .social-second-row{
   display: flex;
+}
+
+.social_logo{
+  width: 100%;
+
+}
+
+.social_logo:hover{
+  transition: 1s;
+
+  transform:scale(7,8);
+
+
 }
