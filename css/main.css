@@ -144,11 +144,26 @@ to{height: 230px}
 .aboutme-section{/*using section from about me as a flex container*/
 color:#e9e9e9;
 }
+.aboutme{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .personal-picture{/*size for the personal picture in about section*/
-  width: 80%;
+  width: 70%;
   height: 300px;
+  border-radius: 25%;
 
+}
+.personal-picture:hover{
+  transition: 1s;
+  border-radius: 0%;
+  box-shadow: 5px 10px 10px #ffffff;
+}
+.aboutme-bio-div{
+  margin-top: 20px;
+  background: rgba(255, 255, 255,0.1);
 }
 
 .aboutme-img-div{/*using aboutme-img-div as a flex container for the positing of picture in mid*/
@@ -156,13 +171,15 @@ color:#e9e9e9;
   justify-content: center;
 
 }
-
-
-article{
-  font-size: 30px;
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width:720px) {
+.aboutme{
+  flex-direction: row;
 }
+
+}
+
+
+
 
 
 /*********************************************************************about me section end here****************************************/
@@ -281,7 +298,8 @@ justify-content: center;
 
 .cv-div-second{
   width: 80%;
-  background: red;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e9e9e9;
   height:500px;
   border-radius: 5%;
   margin: 3%;
@@ -294,6 +312,11 @@ justify-content: center;
   margin: 5%;
 
 
+}
+.cv-image img{
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
 }
 .cv-intro{
 font: black;
