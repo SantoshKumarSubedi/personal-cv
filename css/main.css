@@ -77,19 +77,14 @@ to{height: 230px}
   color: #181717;
   animation-delay: 1s;
   animation-duration: 3s;
-
 }
 
 .github-image{
-
   transition: 1s;
   height: 40px;
   width: 40px;
   margin: 10px;
 }
-
-
-
 
 @keyframes mainsection {
   from{color:#181717}
@@ -105,9 +100,8 @@ to{height: 230px}
   margin-left: -8px;
   margin-right: -8px;
   animation:solid_color 4s linear infinite alternate;
-
-
 }
+
 .social-email{
   text-align: center;
   font-family: 'Courgette', cursive;
@@ -115,18 +109,10 @@ to{height: 230px}
   color:#e9e9e9;
 }
 
-
-
-
-
 @keyframes solid_color {
   from{background:#a32424}
     to{background:#d44242}
 }
-
-
-
-
 
 @media screen and (min-width:720px) {
   .social{
@@ -173,9 +159,18 @@ color:#e9e9e9;
 }
 @media screen and (min-width:720px) {
 .aboutme{
+
   flex-direction: row;
+
 }
 
+.aboutme-img-div{
+flex: 1;
+}
+
+.aboutme-bio-div{
+flex: 1;
+}
 }
 
 

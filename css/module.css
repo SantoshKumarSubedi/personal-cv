@@ -11,6 +11,7 @@ body{
    width: 70%;
    display: flex;
    justify-content: space-around;
+   margin-top: 10px;
  }
   .images_division-mobile{
    width:100%;
@@ -19,19 +20,13 @@ body{
 
  }
 .images{
-  width: 70%;
+  width: 100%;
 
   margin-top: 10px;
 }
-.final-screenshots{
+.final{
   display: flex;
 
-}
-.images-division-final{
-width:40%;
-}
-.images-final{
-  width: 100%;
 }
 header{
   text-align: center;
