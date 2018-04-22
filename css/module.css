@@ -8,9 +8,9 @@ body{
     background: black;
   }
  .images_division{
-   width: 70%;
+   width: 100%;
    display: flex;
-   justify-content: space-around;
+justify-content: center;
    margin-top: 10px;
  }
   .images_division-mobile{
@@ -20,7 +20,7 @@ body{
 
  }
 .images{
-  width: 100%;
+  width: 70%;
 
   margin-top: 10px;
 }

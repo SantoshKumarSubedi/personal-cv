@@ -3,20 +3,28 @@
 <head>
 <title>Contact me</title>
 <meta charset="utf-8">
+<!--importing css files -->
 <link rel="stylesheet" type="text/css" href="../css/main.css"/>
 <link rel="stylesheet" type="text/css" href="../css/header.css"/>
 <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+<!--importing java script -->
 <script src="../js/script.js"></script>
+<!--this is to make page responsive -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--downloading font from google api -->
 <link href="https://fonts.googleapis.com/css?family=Coiny%7CRammetto+One%7CRozha+One" rel="stylesheet">
 </head>
 <body>
+  <!--header division -->
   <header class="header">
+      <!--This is division for logo-->
     <div class="header-first-div">
+      <!-- logo at top left corner-->
       <img class="logo" src="../images/logo.png" alt="logo">
     </div>
 
     <div class="header-second-div" id="header-second-div">
+      <!--Navigation item lists -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a class="links" href="../index.html">Home</a>
       <a class="links" href="contact.html">Contact</a>
@@ -25,6 +33,7 @@
       <a class="links" href="Social.html">Social</a>
       <a class="links" href="module_gp.html" target="_blank">Project</a>
     </div>
+      <!--Hamburger at top right corner -->
     <div class="humberger" style="font-size:50px;cursor:pointer" onclick="openNav()">
       <div class="first-line"></div>
       <div class="second-line"></div>
@@ -35,6 +44,7 @@
 <section class="section">
   <h1>Contact</h1>
 <form class="form" method="post" onsubmit="return validateform(this);">
+    <!--Contact form  -->
   <div class="labelAndFields">
 <label class="name">Name:</label><input type="text" name="fname" class="text-fields" placeholder="enter you name here" />
 <label class="email">Email:</label><input type="text" name="email" class="text-fields" placeholder="enter you email here"/>
@@ -48,6 +58,7 @@
 </form>
 <div id="map"></div>
 <!--this code is taken form w3school-->
+<!--i made some changes but i don't claim it as mine -->
 <script>
       function initMap() {
         var my_co_ordinate = {lat: 27.7484786, lng: 85.3284215};
@@ -61,22 +72,29 @@
         });
       }
     </script>
+      <!--google map api -->
     <script async defer
+
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfm-5Mn8WI0svFOIMWHhW3uAuGFdBkAac&callback=initMap">
     </script>
 
 </section>
+<!--email division at the buttom of the page -->
 <div class="social">
   <div class="social-email">
     <p class="email">subedisantos9@gmail.com</p>
   </div>
 </div>
+<!--footer division it's same for every page -->
 <footer class="footer">
+    <!--navigation list at the buttom of the page -->
   <div class="footer-list">
-    <a class="link" href="index.html">Home</a>
-    <a class="link" href="html/contact.html">Contact</a>
-    <a class="link" href="html/aboutme.html">About me</a>
-    <a class="link" href="html/CV.html">CV</a>
+    <a class="link" href="../index.html">Home</a>
+    <a class="link" href="contact.html">Contact</a>
+    <a class="link" href="aboutme.html">About me</a>
+    <a class="link" href="CV.html">CV</a>
+    <a class="link" href="Social.html">Social</a>
+    <a class="link" href="module_gp.html">Report</a>
   </div>
 <div class="footer-copyright">
 <p>Copyright &copy; 2018</p>

@@ -1,14 +1,15 @@
 /*...................................................CSS for Header..............................................................*/
-.header{
+.header{/*this is the header container*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
   margin-top: 20px;
-  
+
   position: relative;
 
 }
+/*first item of header*/
 .header-first-div{
 display: flex;
 justify-content: space-around;
@@ -17,10 +18,12 @@ animation-duration: 2s;
 animation-fill-mode: forwards;
 
 }
+/*animation for logo*/
 @keyframes logo {
 from{opacity: 0}
 to{opacity: 1}
 }
+/*three line of hamburger*/
 .first-line,.second-line,.third-line{
 
 height: 5px;
@@ -44,7 +47,7 @@ margin: 5px;
     animation-delay: 1s;
     animation-duration: 1s;
   }
-
+/*animation for hamburger*/
 @keyframes line {
   from{background-color: black}
   to{background-color: #45dcfc}
@@ -52,7 +55,7 @@ margin: 5px;
   to{width: 30px}
 }
 
-
+/*second item of header container*/
 .header-second-div{
   height: 100%;
 

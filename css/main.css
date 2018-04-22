@@ -43,6 +43,7 @@ font-family: 'Lato', sans-serif;
 
   animation-fill-mode: forwards;
 }
+/* media query for desktop view of index page*/
 @media screen and (min-width:720px){
 .index-section{
   font-size: 300%;
@@ -58,6 +59,7 @@ width: 1%;
 
 
 }
+/*animatin for lines in the center of index page*/
 @keyframes up_down_mobile {
 from{height: 0px}
 to{height: 230px}
@@ -79,13 +81,8 @@ to{height: 230px}
   animation-duration: 3s;
 }
 
-.github-image{
-  transition: 1s;
-  height: 40px;
-  width: 40px;
-  margin: 10px;
-}
 
+/*animation for index section text*/
 @keyframes mainsection {
   from{color:#181717}
   to{color:#e9e9e9}
@@ -99,7 +96,7 @@ to{height: 230px}
   justify-content: flex-start;
   margin-left: -8px;
   margin-right: -8px;
-  animation:solid_color 4s linear infinite alternate;
+  animation:solid_color 4s linear infinite alternate;/*this line play the animation in infiinte loop*/
 }
 
 .social-email{
@@ -157,6 +154,7 @@ color:#e9e9e9;
   justify-content: center;
 
 }
+/* media query for desktop view of aboutme page*/
 @media screen and (min-width:720px) {
 .aboutme{
 
@@ -193,10 +191,10 @@ flex: 1;
   flex-direction: column;
   margin: 5%;
 }
-.text-fields:hover{
+.text-fields:hover{/* change boarder colo of text field when hover*/
   border:3px solid #a32424;
 }
-.text-fields:focus{
+.text-fields:focus{/* increase width of text fields when clicked*/
   width: 80%;
 }.text-fields:nth-last-of-type(1):focus{
   height:30%;
@@ -244,7 +242,7 @@ button{
   border-color:  #a32424;
   border-width: thick;
 }
-button:hover{
+button:hover{/*when mouse is mover above submit button*/
   background: #a32424 ;
   border-color: white;
 
@@ -259,6 +257,7 @@ button:hover{
 .section h1{
   color:  #e9e9e9;
 }
+/*media query to put text-fields to left*/
 @media screen and (min-width:720px) {
 .labelAndFields{
   align-items: flex-start;
@@ -316,6 +315,7 @@ justify-content: center;
 font: black;
 
 }
+/*media query for desktop view of cv page*/
 @media screen and (min-width:720px) {
   .cv-section{
     flex-direction: row;
@@ -351,7 +351,7 @@ border-radius: 15%;
 
 }
 
-.social_logo:hover{
+.social_logo:hover{/*increase size of image when hover */
   transition: 1s;
 
   transform:scale(7,8);
